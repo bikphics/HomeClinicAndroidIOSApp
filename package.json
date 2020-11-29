@@ -33,6 +33,7 @@
     "react-native-screens": "^2.14.0",
     "react-native-search-filter": "^0.1.5",
     "react-native-snap-carousel": "^3.9.1",
+    "react-native-step-indicator": "^1.0.3",
     "react-native-tab-view": "^2.15.2",
     "react-native-vector-icons": "^7.1.0",
     "styled-components": "^5.2.1"
