@@ -45,12 +45,11 @@ export default MyCarousel;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     paddingVertical: 10,
   },
   item: {
     width: screenWidth - 60,
-    height: height / 3,
+    height: height / 4,
   },
   imageContainer: {
     flex: 1,

@@ -13,7 +13,7 @@ const Cart = (props) => {
         title="Cart Is Empty"
         subheading="Please add something to cart"
         icon={<Ionicons name="cart-outline" size={50} />}
-        navigateTo={() => props.navigation.goBack()}
+        navigateTo={() => props.navigation.navigate('ConfirmOrder')}
         btnText="Go Back"
       />
     </>

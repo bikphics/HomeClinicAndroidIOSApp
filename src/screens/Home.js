@@ -6,6 +6,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Searchbar} from 'react-native-paper';
 import {COLORS} from '../config/Colors';
 import {View} from 'react-native';
+import ServicesComponent from '../components/ServicesComponent';
+import HeadingSection from '../components/HeadingSection';
+import {ScrollView} from 'react-native-gesture-handler';
 const data = [
   {
     id: 1,
@@ -53,8 +56,12 @@ const Home = (props) => {
           onTouchStart={() => props.navigation.navigate('SearchTab')}
         />
       </View>
-      <MyCarousel data={data} />
-      <FloatingCTA />
+      <ScrollView>
+        <MyCarousel data={data} />
+        <HeadingSection />
+        <ServicesComponent {...props} />
+      </ScrollView>
+      <FloatingCTA backgroundColor="#eb4034" />
     </>
   );
 };
