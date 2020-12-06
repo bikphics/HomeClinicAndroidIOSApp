@@ -49,6 +49,7 @@ const Home = (props) => {
           ),
           onPress: () => props.navigation.navigate('Notifications'),
         }}
+        showLocation={true}
       />
       <View style={{padding: 10, backgroundColor: COLORS.PRIMARY}}>
         <Searchbar
