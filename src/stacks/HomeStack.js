@@ -8,6 +8,8 @@ import ServiceDetail from '../screens/ServiceDetail';
 import Notifications from '../screens/Notifications';
 import Orders from '../screens/Orders';
 import TrackOrder from '../screens/TrackOrder';
+import ServiceList from '../screens/ServiceList';
+import FAQ from '../screens/FAQ';
 const Stack = createStackNavigator();
 
 const HomeStack = () => {
@@ -21,9 +23,11 @@ const HomeStack = () => {
       <Stack.Screen name="About" component={About} />
       <Stack.Screen name="Support" component={Support} />
       <Stack.Screen name="Notifications" component={Notifications} />
+      <Stack.Screen name="ServiceList" component={ServiceList} />
       <Stack.Screen name="ServiceDetail" component={ServiceDetail} />
       <Stack.Screen name="Orders" component={Orders} />
       <Stack.Screen name="TrackOrder" component={TrackOrder} />
+      <Stack.Screen name="FAQ" component={FAQ} />
     </Stack.Navigator>
   );
 };

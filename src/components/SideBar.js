@@ -68,6 +68,15 @@ const SideBar = (props) => {
           </Drawer.Section>
           <Drawer.Section>
             <DrawerItem
+              label="Refer & Earn"
+              icon={({color, size}) => (
+                <Icon name="gift-outline" color={color} size={size} />
+              )}
+              onPress={() => props.navigation.navigate('ReferEarn')}
+            />
+          </Drawer.Section>
+          <Drawer.Section>
+            <DrawerItem
               label="Feedback"
               icon={({color, size}) => (
                 <Icon
@@ -83,9 +92,18 @@ const SideBar = (props) => {
             <DrawerItem
               label="Support"
               icon={({color, size}) => (
-                <Icon name="help-circle-outline" color={color} size={size} />
+                <Icon name="help-buoy-outline" color={color} size={size} />
               )}
               onPress={() => props.navigation.navigate('Support')}
+            />
+          </Drawer.Section>
+          <Drawer.Section>
+            <DrawerItem
+              label="FAQ"
+              icon={({color, size}) => (
+                <Icon name="help-circle-outline" color={color} size={size} />
+              )}
+              onPress={() => props.navigation.navigate('FAQ')}
             />
           </Drawer.Section>
           <Drawer.Section>

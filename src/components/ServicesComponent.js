@@ -50,7 +50,7 @@ const ServicesComponent = (props) => {
       {services.map((service) => (
         <View style={styles.item} key={service.id}>
           <TouchableOpacity
-            onPress={() => props.navigation.push('ServiceDetail',service)}>
+            onPress={() => props.navigation.push('ServiceList', service)}>
             <Image style={styles.image} source={service.icon} />
             <Text style={styles.text}>{service.name}</Text>
           </TouchableOpacity>

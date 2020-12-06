@@ -11,7 +11,10 @@ const Topbar = (props) => {
           onPress={props.left.onPress}
         />
       )}
-      <Appbar.Content title={props.title} />
+      <Appbar.Content
+        title={props.title}
+        subtitle={props.showLocation && 'Bhubaneswar, Orissa'}
+      />
       {props.right && (
         <Appbar.Action icon={props.right.icon} onPress={props.right.onPress} />
       )}
